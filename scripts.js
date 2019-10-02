@@ -13,6 +13,11 @@ var request = new XMLHttpRequest()
 request.open('GET', 'https://api.instagram.com/v1/users/self/?access_token=4671371.a036158.fa60ec3894404e7489b07dbc39ea9204', true)
 request.onload = function() {
   // Begin accessing JSON data here
+
+
+/*
+request.onload = function() {
+  // Begin accessing JSON data here
   var data = JSON.parse(this.response)
   if (request.status >= 200 && request.status < 400) {
     data.forEach(movie => {
@@ -35,6 +40,8 @@ request.onload = function() {
     errorMessage.textContent = `Gah, it's not working!`
     app.appendChild(errorMessage)
   }
-}
+}*/
 
 request.send()
+
+document.write(request)
